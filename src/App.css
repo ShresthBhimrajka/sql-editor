@@ -150,10 +150,18 @@
     color: rgb(107 114 128);
 }
 
+.tr:nth-child(even){
+    background-color: rgb(227, 239, 255);
+}
+
+.tr:hover {
+    background-color: #ddd;
+}
+
 .results-header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 80%;
 }
@@ -161,7 +169,7 @@
 .search-block {
     display: flex;
     flex-direction: row;
-    width: 21%;
+    width: max-content;
     height: max-content;
     padding: 1%;
     justify-content: space-between;
