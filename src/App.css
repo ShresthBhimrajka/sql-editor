@@ -1,38 +1,185 @@
 .App {
-  text-align: center;
+    text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title-header {
+    display: flex;
+    background-color: #293857;
+    height: 7%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-block {
+	background-color: white;
+	position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 1%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.editor-block {
+	width: 80%;
+	display: flex;
+    font-size: calc(10px + 2vmin);
+    color: rgb(255, 255, 255);
+	vertical-align: top;
+    padding: 0.1%;
+    border-color: #293857;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.button-block {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 1%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.editor-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 16%;
+}
+
+.presets {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.result-block {
+    display: flex;
+    width: 80%;
+    overflow: auto;
+    justify-content: center;
+    border: 2px #293857;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.interactive-buttons {
+    width: max-content;
+    height: max-content;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    border-color: #293857;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    background-color: white;
+}
+
+.interactive-buttons:hover {
+    background-color: rgb(224, 220, 220);
+    box-shadow: 1 2px 5px 0 rgb(0 0 0 / 0.5), 0 1px 2px -1px rgb(0 0 0 / 0.5);
+}
+
+.table-div {
+    width: 100%;
+    border-radius: 8px;
+    border: #293857;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.table {
+    min-width: 100%;
+    border-top-width: 0px;
+    border-bottom-width: 1px;
+    border-color: #293857;
+    border-collapse: collapse;
+}
+
+.thead {
+    height: 20%;
+    width: 100%;
+    color: #293857;
+}
+
+.table-row-head {
+    height: 20%;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    color: white;
+    background-color: #293857;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.tbody {
+    width: 100%;
+    background-color: white;
+    color: #293857;
+}
+
+.td {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-top-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-color: rgb(122, 122, 122);
+    border-style: solid;
+    white-space: nowrap;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: rgb(107 114 128);
+}
+
+.results-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.search-block {
+    display: flex;
+    flex-direction: row;
+    width: 21%;
+    height: max-content;
+    padding: 1%;
+    justify-content: space-between;
+}
+
+input[type=text] {
+    border: 2px solid #293857;
+    border-radius: 5px;
+    padding-right: 2px;
+}
+
+.search-button {
+    background-color: white;
+    border: 2px solid #293857;
+    border-radius: 5px;
+}
+
+.search-button:hover {
+    background-color: rgb(224, 220, 220);
+    box-shadow: 1 2px 5px 0 rgb(0 0 0 / 0.5), 0 1px 2px -1px rgb(0 0 0 / 0.5);
 }
