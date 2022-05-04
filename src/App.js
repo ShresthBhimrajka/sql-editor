@@ -63,13 +63,6 @@ const App = () => {
                     }
                 }
             }
-            // rows.forEach(row => {
-            //     row.forEach(cell => {
-            //         if(cell.toLowerCase().indexOf(searchText.toLowerCase()) > -1) {
-            //             temp.push(row);
-            //         }
-            //     });
-            // });
             setSearchData(temp);
         } else {
             toast.error("Empty Search Text")
@@ -253,7 +246,17 @@ const App = () => {
                                 </tbody>
                             </table>
                         </div>
-                    </div> </>: <></>}
+                    </div>
+                </>: 
+                <>
+                    <div className='icon-container'>
+                        <FeatherIcon icon={'database'} color={'rgb(216,206,206'} size={200}/>
+                        <div className='text-container'>
+                            <p style={{ color: 'rgb(216,206,206', fontSize: 30, fontWeight: 'bold', textAlign: 'left'}}>Welcome, to the Online SQL Editor</p>
+                            <p style={{ color: 'rgb(216,206,206', fontSize: 30, fontWeight: 'bold', textAlign: 'left'}}>Run a query to see results</p>
+                        </div>
+                    </div>
+                </>}
             </div>
         </div>
     );
