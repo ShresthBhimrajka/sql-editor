@@ -1,7 +1,7 @@
-# SQL-Editor!
-[Screenshot (224)](https://user-images.githubusercontent.com/55908880/166632455-b9b599ca-f830-4ac5-96c3-58a013facbee.png)
+# SQL-Editor
+![Screenshot (224)](https://user-images.githubusercontent.com/55908880/166632455-b9b599ca-f830-4ac5-96c3-58a013facbee.png)
 
-A react project for an online sql ediotr
+A react project for an online sql editor
 
 ## Dependencies
 
