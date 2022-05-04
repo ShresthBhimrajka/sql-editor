@@ -182,7 +182,7 @@ const App = () => {
                         {/* header of the table */}
                         <h2 style={{ display:'flex' ,color:'#293857', fontSize: 20, fontWeight: 'bold', marginLeft: '5px', width: '40%', textAlign: 'left' }}>Results: {(searchFlag ? searchData.length : rows.length)} rows selected</h2>
                         <div className='search-block'>
-                            <text style={{ color:'#293857', fontSize: 20, fontWeight: 'bold', width: 'max-content' }}> Search: </text>
+                            <text style={{ color:'#293857', fontSize: 20, fontWeight: 'bold', width: 'max-content' }}>Search:</text>
                             <input 
                                 type='text' 
                                 id='search' 

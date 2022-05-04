@@ -178,13 +178,19 @@
 input[type=text] {
     border: 2px solid #293857;
     border-radius: 5px;
-    padding-right: 2px;
+    border-right: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-left: 2px;
 }
 
 .search-button {
     background-color: white;
     border: 2px solid #293857;
     border-radius: 5px;
+    border-left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 .search-button:hover {
