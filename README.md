@@ -7,6 +7,8 @@ A react project for an online sql editor
 
   - react-ace
   - react-hot-toast
+  - react-csv
+  - feather-icons-react
 
 ## Page Load
 
