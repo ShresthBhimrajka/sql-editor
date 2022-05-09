@@ -168,7 +168,7 @@ const App = () => {
 
                     {/* div containing export button */}
                     <div className='interactive-buttons'>
-                        <CSVLink style={{ display: 'inline-flex', justifyContent: 'space-between', alignItems: 'center', width: '100%'}} data={csvData} onClick={() => toast.success("Table exported")}>
+                        <CSVLink style={{ display: 'inline-flex', justifyContent: 'space-between', alignItems: 'center', width: '100%'}} data={csvData} onClick={() => toast.success("Table exported")} filename={new Date().getTime()  }>
                             <FeatherIcon icon={'download'} size={30} color={'#293857'}/>
                             <p style={{ color:'#293857', fontSize: 14, fontWeight: 'bold', width: 'max-content' }}>Export Data</p>
                         </CSVLink>
